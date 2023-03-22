@@ -12,6 +12,7 @@
         "astrotomic/laravel-translatable": "^11.0.0",
         "aws/aws-sdk-php": "^3.171",
         "bagisto/legacy-api": "^1.0",
+        "bagisto/pwa": "dev-master",
         "bagisto/rest-api": "dev-master",
         "bagistobrasil/bagisto-product-social-share": "^0.1.2",
         "barryvdh/laravel-debugbar": "^3.1",

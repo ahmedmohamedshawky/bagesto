@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c754fa765ca89e706e7ab3907851302e",
+    "content-hash": "3b13b31ff9c6ff5079399fc3ae4f0bb2",
     "packages": [
         {
             "name": "astrotomic/laravel-translatable",
@@ -281,6 +281,59 @@
                 "source": "https://github.com/bagisto/legacy-api/tree/v1.0.0"
             },
             "time": "2021-11-19T07:54:39+00:00"
+        },
+        {
+            "name": "bagisto/pwa",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagisto/laravel-pwa.git",
+                "reference": "2813741ed2d7224fdfdb9fd07386e4bfd443b876"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagisto/laravel-pwa/zipball/2813741ed2d7224fdfdb9fd07386e4bfd443b876",
+                "reference": "2813741ed2d7224fdfdb9fd07386e4bfd443b876",
+                "shasum": ""
+            },
+            "require": {
+                "jenssegers/agent": "^3.0@dev"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webkul\\PWA\\Providers\\PWAServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\PWA\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "viveksharma-webkul",
+                    "email": "viveksh047@webkul.com"
+                },
+                {
+                    "name": "Shubham Mehrotra",
+                    "email": "shubhammehrotra.symfony@webkul.com"
+                }
+            ],
+            "description": "Progressive Web Application transforms your website to a mobile application",
+            "support": {
+                "issues": "https://github.com/bagisto/laravel-pwa/issues",
+                "source": "https://github.com/bagisto/laravel-pwa/tree/master"
+            },
+            "time": "2023-02-10T06:11:44+00:00"
         },
         {
             "name": "bagisto/rest-api",
@@ -2450,6 +2503,142 @@
             "time": "2020-12-07T15:07:18+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.114",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "62d0e6b38f6715c673e156ffb0fc894791de3452"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/62d0e6b38f6715c673e156ffb0fc894791de3452",
+                "reference": "62d0e6b38f6715c673e156ffb0fc894791de3452",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.5|^6.5|^9.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "support": {
+                "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.114"
+            },
+            "time": "2023-03-21T21:54:27+00:00"
+        },
+        {
+            "name": "jenssegers/agent",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/agent.git",
+                "reference": "1d91c71bc076a60061e0498216c0caf849eced94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/agent/zipball/1d91c71bc076a60061e0498216c0caf849eced94",
+                "reference": "1d91c71bc076a60061e0498216c0caf849eced94",
+                "shasum": ""
+            },
+            "require": {
+                "jaybizzle/crawler-detect": "^1.2",
+                "mobiledetect/mobiledetectlib": "^2.7.6",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.0|^6.0|^7.0"
+            },
+            "suggest": {
+                "illuminate/support": "Required for laravel service providers"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Agent\\AgentServiceProvider"
+                    ],
+                    "aliases": {
+                        "Agent": "Jenssegers\\Agent\\Facades\\Agent"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Agent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "Desktop/mobile user agent parser with support for Laravel, based on Mobiledetect",
+            "homepage": "https://github.com/jenssegers/agent",
+            "keywords": [
+                "Agent",
+                "browser",
+                "desktop",
+                "laravel",
+                "mobile",
+                "platform",
+                "user agent",
+                "useragent"
+            ],
+            "support": {
+                "issues": "https://github.com/jenssegers/agent/issues",
+                "source": "https://github.com/jenssegers/agent/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jenssegers",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/jenssegers/agent",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-24T07:38:41+00:00"
+        },
+        {
             "name": "kalnoy/nestedset",
             "version": "v6.0.0",
             "source": {
@@ -4174,6 +4363,62 @@
                 "source": "https://github.com/maximebf/php-debugbar/tree/v1.17.3"
             },
             "time": "2021-10-19T12:33:27+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.8.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "fc9cccd4d3706d5a7537b562b59cc18f9e4c0cb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/fc9cccd4d3706d5a7537b562b59cc18f9e4c0cb1",
+                "reference": "fc9cccd4d3706d5a7537b562b59cc18f9e4c0cb1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35||~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Detection": "namespaced/"
+                },
+                "classmap": [
+                    "Mobile_Detect.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "support": {
+                "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.41"
+            },
+            "time": "2022-11-08T18:31:26+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -12233,6 +12478,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "bagisto/pwa": 20,
         "bagisto/rest-api": 20
     },
     "prefer-stable": true,
@@ -12241,5 +12487,5 @@
         "php": "^7.4|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
