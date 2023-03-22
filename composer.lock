@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f84b93dc9d0a80eb7d78906392e8ce90",
+    "content-hash": "5bef3e7875580a27b754e7322dc674bf",
     "packages": [
         {
             "name": "astrotomic/laravel-translatable",
@@ -342,6 +342,60 @@
                 "source": "https://github.com/bagisto/bagisto-delivery-time-slot/tree/master"
             },
             "time": "2022-01-17T13:10:23+00:00"
+        },
+        {
+            "name": "bagisto/bagisto-image-gallery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagisto/bagisto-image-gallery.git",
+                "reference": "30445a8537c1457bb8c2f07fd1c8d7d16418a5cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagisto/bagisto-image-gallery/zipball/30445a8537c1457bb8c2f07fd1c8d7d16418a5cf",
+                "reference": "30445a8537c1457bb8c2f07fd1c8d7d16418a5cf",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.10.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webkul\\ImageGallery\\Providers\\ImageGalleryServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\ImageGallery\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bagisto"
+                }
+            ],
+            "description": "Allows the admin to add/manage images into various galleries.",
+            "homepage": "https://github.com/bagisto/bagisto-image-gallery",
+            "keywords": [
+                "bagisto",
+                "image",
+                "image-gallery"
+            ],
+            "support": {
+                "issues": "https://github.com/bagisto/bagisto-image-gallery/issues",
+                "source": "https://github.com/bagisto/bagisto-image-gallery/tree/master"
+            },
+            "time": "2022-01-22T01:37:31+00:00"
         },
         {
             "name": "bagisto/bagisto-weaccept-payment",
@@ -6718,6 +6772,50 @@
             "time": "2021-12-11T13:40:54+00:00"
         },
         {
+            "name": "smartarget/bagisto-whatsapp-contact-us",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/erezson/smartarget-bagisto-whatsapp-contact-us.git",
+                "reference": "b70d9d0979aa338a302eeca03c2d96db762231e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/erezson%2Fsmartarget-bagisto-whatsapp-contact-us/repository/archive.zip?sha=b70d9d0979aa338a302eeca03c2d96db762231e7",
+                "reference": "b70d9d0979aa338a302eeca03c2d96db762231e7",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Smartarget\\WhatsappContactUs\\Providers\\WhatsappContactUsServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Smartarget\\WhatsappContactUs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Smartarget",
+                    "email": "Support@smartarget.online"
+                }
+            ],
+            "description": "Allow customers to contact you using Whatsapp",
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/27197010/issues"
+            },
+            "time": "2021-06-06T17:23:40+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.3.0",
             "source": {
@@ -12645,6 +12743,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "bagisto/bagisto-bulk-upload": 20,
+        "bagisto/bagisto-delivery-time-slot": 20,
+        "bagisto/bagisto-image-gallery": 20,
         "bagisto/bagisto-weaccept-payment": 20,
         "bagisto/pwa": 20,
         "bagisto/rest-api": 20

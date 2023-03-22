@@ -13,6 +13,7 @@
         "aws/aws-sdk-php": "^3.171",
         "bagisto/bagisto-bulk-upload": "dev-master",
         "bagisto/bagisto-delivery-time-slot": "dev-master",
+        "bagisto/bagisto-image-gallery": "dev-master",
         "bagisto/bagisto-weaccept-payment": "dev-master",
         "bagisto/legacy-api": "^1.0",
         "bagisto/pwa": "dev-master",
@@ -42,7 +43,8 @@
         "maatwebsite/excel": "^3.1.26",
         "paypal/paypal-checkout-sdk": "1.0.1",
         "prettus/l5-repository": "^2.6",
-        "pusher/pusher-php-server": "^7.0"
+        "pusher/pusher-php-server": "^7.0",
+        "smartarget/bagisto-whatsapp-contact-us": "^1.0"
     },
     "require-dev": {
         "codeception/codeception": "^4.1",
