@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1f1063e7819dc56d88aa68493b08d47",
+    "content-hash": "f84b93dc9d0a80eb7d78906392e8ce90",
     "packages": [
         {
             "name": "astrotomic/laravel-translatable",
@@ -288,6 +288,60 @@
                 "source": "https://github.com/bagisto/bagisto-bulk-upload/tree/master"
             },
             "time": "2022-01-12T09:12:07+00:00"
+        },
+        {
+            "name": "bagisto/bagisto-delivery-time-slot",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagisto/bagisto-delivery-time-slot.git",
+                "reference": "b05803a697046252be3326397bf878d6dd2fbd4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagisto/bagisto-delivery-time-slot/zipball/b05803a697046252be3326397bf878d6dd2fbd4b",
+                "reference": "b05803a697046252be3326397bf878d6dd2fbd4b",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webkul\\DeliveryTimeSlot\\Providers\\DeliveryTimeSlotServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\DeliveryTimeSlot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Naresh Verma",
+                    "email": "naresh.verma327@webkul.com"
+                }
+            ],
+            "description": "Allows the admin to set the delivery day along with the delivery time slots for their orders.",
+            "homepage": "https://github.com/bagisto/bagisto-delivery-time-slot",
+            "keywords": [
+                "bagisto",
+                "delivery time slot"
+            ],
+            "support": {
+                "issues": "https://github.com/bagisto/bagisto-delivery-time-slot/issues",
+                "source": "https://github.com/bagisto/bagisto-delivery-time-slot/tree/master"
+            },
+            "time": "2022-01-17T13:10:23+00:00"
         },
         {
             "name": "bagisto/bagisto-weaccept-payment",
@@ -12590,6 +12644,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "bagisto/bagisto-bulk-upload": 20,
         "bagisto/bagisto-weaccept-payment": 20,
         "bagisto/pwa": 20,
         "bagisto/rest-api": 20
