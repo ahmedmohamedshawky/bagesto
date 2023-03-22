@@ -11,6 +11,8 @@
         "php": "^7.4|^8.0",
         "astrotomic/laravel-translatable": "^11.0.0",
         "aws/aws-sdk-php": "^3.171",
+        "bagisto/bagisto-bulk-upload": "dev-master",
+        "bagisto/bagisto-weaccept-payment": "dev-master",
         "bagisto/legacy-api": "^1.0",
         "bagisto/pwa": "dev-master",
         "bagisto/rest-api": "dev-master",

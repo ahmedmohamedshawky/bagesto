@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b13b31ff9c6ff5079399fc3ae4f0bb2",
+    "content-hash": "b1f1063e7819dc56d88aa68493b08d47",
     "packages": [
         {
             "name": "astrotomic/laravel-translatable",
@@ -231,6 +231,118 @@
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.209.4"
             },
             "time": "2022-01-12T19:14:37+00:00"
+        },
+        {
+            "name": "bagisto/bagisto-bulk-upload",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagisto/bagisto-bulk-upload.git",
+                "reference": "3238ada3aeaa920b03e48b5d4ff0cb875524c613"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagisto/bagisto-bulk-upload/zipball/3238ada3aeaa920b03e48b5d4ff0cb875524c613",
+                "reference": "3238ada3aeaa920b03e48b5d4ff0cb875524c613",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webkul\\Bulkupload\\Providers\\BulkUploadServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\Bulkupload\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Prateek Srivastava",
+                    "email": "prateek.srivastava781@webkul.com",
+                    "homepage": "https://bagisto.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add products using CSV or XLS in bagisto.",
+            "homepage": "https://github.com/bagisto/bagisto-bulk-upload",
+            "keywords": [
+                "bagisto",
+                "bulk upload",
+                "product upload"
+            ],
+            "support": {
+                "issues": "https://github.com/bagisto/bagisto-bulk-upload/issues",
+                "source": "https://github.com/bagisto/bagisto-bulk-upload/tree/master"
+            },
+            "time": "2022-01-12T09:12:07+00:00"
+        },
+        {
+            "name": "bagisto/bagisto-weaccept-payment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagisto/bagisto-weaccept-payment.git",
+                "reference": "64e96acbedbbffb40af13f8310729ac7dbec462d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagisto/bagisto-weaccept-payment/zipball/64e96acbedbbffb40af13f8310729ac7dbec462d",
+                "reference": "64e96acbedbbffb40af13f8310729ac7dbec462d",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webkul\\WeAccept\\Providers\\WeAcceptServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\WeAccept\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bagisto",
+                    "homepage": "https://bagisto.com"
+                }
+            ],
+            "description": "Allow customers to pay for others using weaccept payment gateway.",
+            "homepage": "https://github.com/bagisto/bagisto-weaccept-payment",
+            "keywords": [
+                "bagisto",
+                "weaccept",
+                "weaccept payment"
+            ],
+            "support": {
+                "issues": "https://github.com/bagisto/bagisto-weaccept-payment/issues",
+                "source": "https://github.com/bagisto/bagisto-weaccept-payment/tree/master"
+            },
+            "time": "2022-01-17T11:45:50+00:00"
         },
         {
             "name": "bagisto/legacy-api",
@@ -12478,6 +12590,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "bagisto/bagisto-weaccept-payment": 20,
         "bagisto/pwa": 20,
         "bagisto/rest-api": 20
     },
